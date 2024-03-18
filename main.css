@@ -1,0 +1,140 @@
+@import url("utility.css");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* outline: 1px rgb(192, 15, 15) solid; */
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 80% 10%;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px rgb(0, 0, 0) solid;
+  background: rgba(45, 143, 163, 0.2y);
+  background: rgb(10, 70, 73);
+}
+
+.appName {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: nunito;
+  font-weight: 200;
+}
+
+.button1 {
+  cursor: pointer;
+  height: 5rem;
+  width: 5rem;
+  /* position: relative;
+  right: 4%;
+  top: 15%; */
+  border-radius: 50%;
+  background: rgb(12, 42, 48);
+  border: none;
+  border: rgb(255, 255, 255) solid 3px;
+  margin-top: 0.4%;
+}
+/*  */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.displayScreen {
+  min-width: 80%;
+  height: 50%;
+  font-size: 350%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 2px double black;
+  border-radius: 1rem;
+  font-weight: 100;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.button2 {
+  margin-top: -25%;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 100%;
+  position: absolute;
+  bottom: 1%;
+  cursor: pointer;
+  border: 1px solid white;
+  background: rgb(10, 70, 73);
+  color: aliceblue;
+}
+footer {
+  background: rgb(10, 70, 73);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+
+@media screen and (max-width: 580px) {
+  body {
+    /* background: greenyellow; */
+  }
+  .displayScreen {
+    font-size: 300%;
+  }
+  .appName {
+    font-size: 150%;
+    position: relative;
+    left: 2%;
+  }
+  .button2 {
+    font-size: 100%;
+  }
+  .button1 {
+    /* width: 12%; */
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .button1 {
+    border-radius: 1rem;
+  }
+  .container {
+    width: 100vw;
+  }
+  .appName {
+    font-size: 100%;
+    position: relative;
+    left: 2%;
+  }
+}
